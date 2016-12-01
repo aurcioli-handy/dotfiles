@@ -10,9 +10,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 echo -e "${RED}[+] ${GREEN}Downloading color schemes${RESET}\n"
 mkdir -p ~/.vim
-git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/colors
-cp -R ~/.vim/colors/colors/ ~/.vim/colors
-rm -rf ~/.vim/colors/colors/
+cd ~
+git clone https://github.com/flazz/vim-colorschemes.git
+mv vim-colorschemes/colors ~/.vim/
 
 echo -e "${RED}[+] ${GREEN}Installing ctrlp.vim${RESET}\n"
 cd ~/.vim
